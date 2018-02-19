@@ -45,16 +45,16 @@ map <F2> :call VimuxRunCommand("make")<cr>
 
 "inoremap <c-u> <esc>vbUea
 
-iab fc# /* <cr>
- \Name:<tab><cr>
- \Purpose:<tab><cr>
- \Arguments:<tab><cr>
- \Output:<tab><cr>
- \Modifies:<tab><cr>
- \Returns:<tab><cr>
- \Assumptions:<tab><cr>
- \Bugs:<tab><cr>
- \Notes:<tab><cr>/<esc>?Name<cr>A
+"iab fc# /* <cr>
+" \Name:<tab><cr>
+" \Purpose:<tab><cr>
+" \Arguments:<tab><cr>
+" \Output:<tab><cr>
+" \Modifies:<tab><cr>
+" \Returns:<tab><cr>
+" \Assumptions:<tab><cr>
+" \Bugs:<tab><cr>
+" \Notes:<tab><cr>/<esc>?Name<cr>A
 
 
 inoremap jk <esc>
@@ -76,9 +76,10 @@ Plugin 'SirVer/ultisnips'
 Plugin 'benmills/vimux'
 call vundle#end()            " required
 filetype plugin indent on    " required
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/youcompleteme/c/.ycm_extra_config.py'
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
+
 let g:UltiSnipsExpandTrigger="<c-l>"
 let g:UltiSnipsJumpForwardTrigger="<c-f>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
